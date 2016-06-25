@@ -1,0 +1,2083 @@
+/*Responsive web design*/
+
+	/*Wach*/
+	@media (min-width: 0px){
+		.logo {
+		    display: none;
+		}
+		.logoResponsive {
+			display: none;
+		}
+		.logoDisiplinaBlog {
+			display: none;
+		}
+
+
+		.contenedorSliderMain {
+		    top: 45px;
+		}
+
+/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+
+		.icon {
+			position: fixed;
+		    cursor: pointer;
+		    display: inline-block;
+		    width: 100%;
+		    height: 45px;
+		    float: left;
+		    /* margin: 0px 0px; */
+		    background-color: #0D395B;
+		    z-index: 100;
+		}
+		.iconoMenu {
+			width: 15%;
+			height: 65%;
+			margin-left: auto;
+			margin-right: 10px;
+			margin-top: 7px;
+		}
+
+		.icon span {
+		  margin-top: 35px;
+		}
+		.icon span, .icon span:before, .icon span:after {
+		    cursor: pointer;
+		    float: left;
+		    margin: 12px;
+		    margin-left: auto;
+		    margin-right: 1px;
+		    margin-top: 12px;
+		    border-radius: 3px;
+		    height: 6px;
+		    width: 23px;
+		    background: #fff;
+		    position: absolute;
+		    /* display: block; */
+		    content: '';
+		    -webkit-transition: all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47);
+		    -moz-transition: all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47);
+		    /* transition: all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47); */
+		}
+
+		.icon span:before {
+		  top: -20px;
+		}
+		.icon span:after {
+		  bottom: -20px;
+		}
+
+		.icon.active span {
+		  background-color: transparent;
+		  margin: auto;
+		}
+		.icon.active span:before, .icon.active span:after {
+		  top: 0;
+		}
+		.icon.active span:before {
+		  -webkit-transform: rotate(45deg) scale(1.2);
+		  -moz-transform: rotate(45deg) scale(1.2);
+		  -ms-transform: rotate(45deg) scale(1.2);
+		  -o-transform: rotate(45deg) scale(1.2);
+		  transform: rotate(45deg) scale(1.2);
+		}
+		.icon.active span:after {
+		  -webkit-transform: rotate(-45deg) scale(1.2);
+		  -moz-transform: rotate(-45deg) scale(1.2);
+		  -ms-transform: rotate(-45deg) scale(1.2);
+		  -o-transform: rotate(-45deg) scale(1.2);
+		  transform: rotate(-45deg) scale(1.2);
+		}
+
+/*ESTILOS PARA NAV, UL, LI A DEL MENU RESPONSIVO*/
+		
+		.redfacebook, .redtwitter{
+			display: none;
+		}
+		section nav div ul {
+		    /* padding-left: 130px; */
+		    /* margin-top: 10px; */
+		    width: 100%;
+		    height: 150px;
+		    font-size: 10px;
+		    /* margin: auto; */
+		    padding: 0;
+		    background: #0D395B;
+		    overflow-y: auto;
+		}
+		
+		section nav div ul li {
+		    width: 109px;
+		}
+
+		section nav div ul li:hover {
+			background: #3B9083;
+		    transition: ease 0.5s;
+		    -webkit-transition: ease 0.5s;
+		    -moz-transition: ease 0.5s;
+		    -o-transition: ease 0.5s;
+		}
+		section nav div.navService {
+		    width: 65%;
+		    /* display: inline-block; */
+		    /* margin: auto; */
+		    margin-top: 0px;
+		}
+
+		section nav.navbar-fixed-top{
+		    /* clear: both; */
+		    box-shadow: inset 5px 0 0 lighten(seagreen,5%);
+		    width: 12em;
+		    position: fixed;
+		    height: calc(50% - 98px);
+		    left: 0% !important;
+		    margin-top: 45px;
+		    transition: left .5s ease;
+		    z-index: 10;
+		}
+		section nav div ul{
+		    list-style:none;
+		 }
+		  
+		  section nav div ul li a{
+		    padding-top: 0px !important;
+		    padding-bottom: 0px !important;
+		    padding-left: 0px !important;
+		    padding-right: 0px !important;
+		    box-shadow: inset 5px 0 0 lighten(seagreen,5%);
+		    color:#f7f7f7;
+		    display:block;
+		    margin-bottom:5px;
+		    padding: 1rem 1rem 1rem 1.5rem;
+		    text-decoration:none;  
+		    text-transform: uppercase;
+		    transition:all 0.5s ease;
+		   }
+		   section nav div ul li a:hover{
+		      box-shadow:inset 500px 0 0 lighten(seagreen,5%);
+		      padding-left:2.5rem;
+		    }
+		  
+		
+		.boton-menu{
+		  position:fixed;
+		  top:1rem;
+		  right: 1rem;
+		  display:inline-block;
+		  padding: .25rem 1rem ;
+		  text-decoration:none;
+		  color:#fff;
+		  font-size:2rem;
+		  background-color:darken(seagreen,5%); 
+		  cursor:pointer;
+		}
+
+		section nav.mostrar{
+		  left: -108% !important;
+		}
+
+		/*ESTILOS DEL ESLOGAN DE AVANCE SOBRE EL SLIDER PRINCIPAL*/
+
+		.sloganavance {
+		    margin-top: 80px;
+		    left: 0%;
+		}
+		h1.h1corporativo2 {
+			font-size: 15pt;
+		}
+		h2.h1titulo {
+		    width: 100%;
+		    font-size: 17pt;
+		    text-align: center;
+		}
+
+		/*MENU DE LA INFORMACION DE AVANCE*/
+		section nav.menuinfo {
+			display: none;
+		}
+
+
+	/*ESTILOS PARA IMAGENES DEL INDEX DE AVANCE*/
+		.imgAvanceIndex{
+			display: none;
+		}
+	/*ESTILOS PARA TEXTO DELA INFORMACION EN INDEX H1*/
+		.mision {
+		    border-bottom-style: solid;
+		    border-bottom-color: #0D395B;
+		    border-bottom-width: 1.5px;
+		    margin: 3px;
+		    padding-top: 4px;
+		    padding-bottom: 50px;
+		}
+
+		h1.h1corporativo {
+		    font-size: 12pt;
+		}
+
+		button.btnconocenos {
+			width: 130px;
+			margin-bottom: 20px;
+		}
+
+		button.btnmision {
+			width: 130px;
+			margin-bottom: 20px;
+		}
+
+		button.btnvision {
+			width: 130px;
+		}
+
+		h1.h1corporativo {
+			margin-top: 20px;
+		}
+		/*ESTILOS MODAL*/
+		img#imageresource {
+			width: 100%
+		}
+
+		img#icono1resource{
+			right: 60px;
+		}
+		img#icono2resource {
+			left: 5px;
+		}
+
+	/*ESTILOS PARA PESTAÑA DE SERVICIOS*/
+		h1.h1MisionVision {
+			font-size: 27pt;
+		}
+		.contenedorMision {
+			margin-left: 0;
+		} 
+		.contenedorVision {
+		    margin-right: 0;
+		}
+		p.pMisionVision {
+			text-align: center;
+		}
+
+		h1.h1TituloServicios {
+		    font-size: 18pt;
+		}
+	/*ESTILOS PARA LOS SERVICIOS DE AVANCE*/
+			#container {
+		    width: 100%;
+		}
+		.contenedorImgServicios {
+		    width: 100%;
+		    display: block;
+		}
+		.div-img .text {
+    		width: 100%;
+    	}
+
+		
+
+	/*ESTILOS PARA FOOTER CONTACTANOS*/
+		.h1Footer {
+			font-size: 15pt;
+		}
+
+		.h3Contactanos {
+			font-size: 13pt;
+		}
+
+		.h4Contactanos {
+			font-size: 10pt;
+			text-align: justify;
+		}
+		.contenedorPrincipalContactanos {
+		    margin: 5px;
+		}
+		.contenedorTituloServicio, .contenedorUbicacion, .contenedorCorreo, .contenedorTelefono {
+			margin: 4px;
+		}
+		h4.correo {
+			width: 137px;
+    		word-wrap: break-word;
+		    margin: 1px;
+		    padding: 12px 7px;
+		    padding-left: 0px;
+		}
+	/*ESTILOS PARA FOOTER FORMULARIO*/
+		.espacio {
+		    padding: 0px;
+		    padding-left: 1%;
+		    padding-right: 1px;
+		}
+		button.btnenviar {
+		    margin-left: 0px;
+		    margin-right: 0px;
+		}
+	/*ESTILOS PARA FOOTER COPYRIGHT*/
+		h4.h4copyRights {
+		    font-size: 10pt;
+		}
+
+	/*ESTILOS PARA AVANCE PESTAÑA CONTADURIA*/
+
+	/*ESTILOS PARA APARTADO DE LEGAL*/
+
+	/*ESTILOS PARA APARTADO DE CAPITAL HUMANO*/
+
+	/*ESTILOS PARA APARTADO DE ADMINISTRATIVOS*/
+		.sloganavanceAdministrativos, .sloganavanceCHumano, .sloganavanceLegal, .sloganavanceContaduria {
+			    width: 100%;
+			    margin-left: auto;
+			    margin-right: auto;
+			    margin-top: 100px;
+			    left: 0;
+		}
+
+		.contenedorMision {
+		    margin-left: 0;
+		    margin-bottom: 10px;
+		    border-bottom-style: solid;
+		    border-bottom-width: 1.5px;
+		}
+		.contenedorVision {
+		    margin-left: 0;
+		    margin-bottom: 10px;
+		    border-bottom-style: solid;
+		    border-bottom-width: 1.5px;
+		}
+	/*ESTILOS PARA APARTADO DE CAPITAL HUMANO*/
+	/*ESTILOS PARA APARTADO DE BLOG*/
+		section section#lista_articulos {
+			width: 100%;
+			margin-top: 50px;
+		}
+		.grid {
+			padding: 0px 0px 0px 0px;
+		    padding-top: 0px;
+		}
+		section div aside section ul {
+		    padding-left: 0px;
+		    margin: 5px;
+		    border-bottom-style: solid;
+		    border-bottom-color: #0D395B;
+		    border-bottom-width: 1.6px;
+		    padding-top: 20px;
+		}
+		.grid li {
+			width: 100%;
+			padding: 0;
+		}
+		
+		.grid div.textoBlog {
+		    padding: 2px;
+		    top: 245px;
+		    margin-top: -245px;
+		    overflow-y: scroll;
+		    height: 97px;
+		}
+		.grid div h3 {
+		    font-size: 15pt;
+		}
+		.grid div div p {
+		    font-size: 10pt;
+		    margin-bottom: 0px;
+		    margin: 5px;
+		}
+		.grid div div a {
+		    margin-left: auto;
+		    margin-right: auto;
+		    font-size: 12pt;
+		    /* text-align: center; */
+		    width: 65%;
+		    display: block;
+		    margin: auto;
+		    background: #3B9083;
+		    text-decoration: none;
+		}
+		.grid div a {
+		    padding: 0px 0px;
+		}
+	/*ESTILOS PARA APARTADO DE BLOG PAGINA SINGLE*/
+		section section article hgroup h2 {
+		    font-size: 0pt;
+		}
+		section section article hgroup h2 a {
+		    font-size: 12pt;
+		}
+		
+		img.attachment-list_articles_thumbs.size-list_articles_thumbs.wp-post-image {
+		    height: 100px;
+		}
+
+		/*ESTILOS PARA LA BARRA LATERAL DE ENTRADAS*/
+		section aside {
+		    width: 100%;
+		    margin-top: 0px;
+		}
+		section aside h3 {
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+	@media (min-width: 136px){
+	/*ESTILOS DE EL MENU DE NAVEGACIÓN*/
+		section nav div ul {
+		    height: 125px;
+		}
+	/*ESTILOS GENERALES PARA LOS SERVICIOS*/
+		.div-img .text {
+    		width: 93%;
+    	}
+		h4.correo {
+		    width: 118px;
+		}
+		.h1Footer {
+		    font-size: 12pt;
+		}
+		.h3Contactanos {
+		    font-size: 11pt;
+		}
+	/*ESTILOS PARA INDEX*/
+		h2.h1titulo {
+		    font-size: 11pt;
+		}
+		h1.h1corporativo {
+		    font-size: 10pt;
+		}
+		h1.h1corporativo2 {
+		    font-size: 12pt;
+		}
+		button.btnconocenos, button.btnmision {
+		    width: 100px;
+		}
+		i.fa.fa-eye {
+		    display: none;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		
+	/*ESTILOS PARA LEGAL*/
+
+		h1.h1MisionVision {
+		    font-size: 22pt;
+		}
+		h1.h1TituloServicios {
+		    font-size: 15pt;
+		}
+	}
+	@media (min-width: 156px){
+		/*ESTILOS DE EL MENU DE NAVEGACIÓN*/
+		section nav div ul {
+		    height: 150px;
+		}
+	/*ESTILOS GENERALES PARA LOS SERVICIOS*/
+		
+
+
+
+		h4.correo {
+		    width: 136px;
+		}
+		.h1Footer {
+		    font-size: 15pt;
+		}
+		.h3Contactanos {
+		    font-size: 13pt;
+		}
+	/*ESTILOS PARA INDEX*/
+		h2.h1titulo {
+		    font-size: 11pt;
+		}
+		h1.h1corporativo {
+		    font-size: 12pt;
+		}
+		h1.h1corporativo2 {
+		    font-size: 15pt;
+		}
+		button.btnconocenos, button.btnmision {
+		    width: 120px;
+		}
+		i.fa.fa-eye {
+		    display: inline-block;
+		}
+	/*ADMINISTRATIVOS*/
+
+	/*ESTILOS PARA EL BLOG*/
+		
+	/*ESTILOS PARA LEGAL*/
+
+	/*ESTILOS PARA LEGAL*/
+
+	/*ESTILOS PARA CONTADURIA*/
+
+		h1.h1MisionVision {
+		    font-size: 22pt;
+		    margin-left: 10px
+		}
+		h1.h1TituloServicios {
+		    font-size: 18pt;
+		}
+	}
+
+	@media (min-width: 187px){
+		/*ESTILOS DE EL MENU DE NAVEGACIÓN*/
+		section nav div ul {
+		    height: 150px;/*listo*/
+		}
+	/*ESTILOS GENERALES PARA LOS SERVICIOS*/
+		
+
+
+
+
+		h4.correo {
+		    width: 167px;
+		}
+		.h1Footer {
+		    font-size: 15pt;
+		}
+		.h3Contactanos {
+		    font-size: 13pt;
+		}
+	/*ESTILOS PARA INDEX*/
+		h2.h1titulo {
+		    font-size: 11pt;
+		}
+		h1.h1corporativo {
+		    font-size: 12pt;
+		}
+		h1.h1corporativo2 {
+		    font-size: 15pt;
+		}
+		button.btnconocenos, button.btnmision {
+		    width: 120px;
+		}
+		i.fa.fa-eye {
+		    display: inline-block;
+		}
+	/*ADMINISTRATIVOS*/
+
+	/*ESTILOS PARA EL BLOG*/
+		
+	/*ESTILOS PARA LEGAL*/
+
+	/*ESTILOS PARA LEGAL*/
+
+	/*ESTILOS PARA CONTADURIA*/
+
+		h1.h1MisionVision {
+		    font-size: 22pt;
+		    margin-left: 25px;/*listo*/
+		}
+		h1.h1TituloServicios {
+		    font-size: 18pt;
+		}
+	}
+
+	@media (min-width: 213px){
+	/*ESTILOS PARA EL MENU*/
+		section nav div.navService {
+		    width: 85%;
+		}
+		section nav div ul {
+		    height: 170px;
+		}
+		section nav div ul li {
+		    width: 143px;
+		}
+		section nav div ul li a {
+			font-size: 10pt;
+		}
+		section nav.navbar-fixed-top {
+	    height: calc(46% - 98px);
+		}
+	/*ESTILOS PARA EL FOOTER*/
+		.h1Footer {
+		    font-size: 20pt;
+		}
+		.h3Contactanos {
+		    font-size: 15pt;
+		}
+		.h4Contactanos {
+		    font-size: 12pt;
+		}
+		h4.h4copyRights {
+		    font-size: 12pt;
+		}
+		h4.correo {
+		    width: 192px;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		.logoDisiplinaAdministrativos {
+		    height: 213px;
+		}
+		h2.h1titulo {
+		    font-size: 15pt;
+		}
+		h1.h1corporativo {
+		    font-size: 15pt;
+		}
+		h1.h1corporativo2 {
+		    font-size: 20pt;
+		}
+		button.btnconocenos, button.btnmision {
+		    width: 155px;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+
+		h1.h1MisionVision {
+		    margin-left: 0px;
+		    margin: 40px;
+		}
+		p.pMisionVision {
+		    text-align: justify;
+		    font-size: 12pt;
+		}
+		h1.h1TituloServicios {
+		    font-size: 20pt;
+		}
+		.div-img .text p {
+		    font-size: 12pt;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		
+		img.attachment-list_articles_thumbs.size-list_articles_thumbs.wp-post-image {
+		    height: 110px;
+		}
+		.grid div h3 {
+		    font-size: 18pt;
+		}
+		.grid div div p {
+		    font-size: 12pt;
+		}
+		.grid div div a {
+    	font-size: 15pt;
+    	}
+
+    	.grid div.textoBlog {
+		    height: 110px;
+		}
+
+    	section aside {
+		    padding: 10px;
+		}
+		section aside h3 {
+		    font-size: 22px;
+		}
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		.logoDisiplinaCHumano {
+			height: 213px;
+		}
+
+	/*ESTILOS PARA CONTADURIA*/
+		.logoDisiplinaContables {
+			height: 213px;
+		}
+
+	/*ESTILOS PARA LEGAL*/
+		.logoDisiplinaLegal {
+			height: 213px;
+		}
+	}
+
+	@media (min-width: 241px){
+	/*ESTILOS PARA EL HEADER MENU*/
+		section nav.navbar-fixed-top {
+		    height: calc(45% - 98px);
+		}
+		section nav div ul {
+		    height: 175px;
+		}
+	/*ESTILOS PARA EL FOOTER*/
+		h4.correo {
+		    width: 221px;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+
+		.logoDisiplinaAdministrativos {
+		    height: 218px;
+		}
+		h1.h1MisionVision {
+		    margin: 51px;
+		}
+
+		.div-img .text p {
+		    font-size: 15pt;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		
+		img.attachment-list_articles_thumbs.size-list_articles_thumbs.wp-post-image {
+		    height: 130px;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		section section article hgroup h2 a {
+		    font-size: 20pt;
+		}
+		section section article div.extract {
+		    font-size: 12pt;
+		}
+		section div aside section ul {
+		    font-size: 12pt;
+		}
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		.logoDisiplinaContables {
+		    height: 218px;
+		}
+
+	/*ESTILOS PARA CONTADURIA*/
+
+	/*ESTILOS PARA LEGAL*/
+		
+	}
+
+	/*Smartphone*/
+	@media (min-width: 320px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+		.logoResponsive {
+			display: inline-block;
+		    width: 45%;
+		    float: left;
+		    margin-top: 22px;
+		}
+		.imglogoResponsive {
+			display: inline-block;
+		    width: 100px;
+		    margin-top: 10px;
+		    margin: auto;
+		    margin-left: 20px;
+		}
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+		section nav div.navService {
+		    margin-top: 25px;
+		}
+		.icon {
+		    height: 70px;
+		}
+		.iconoMenu {
+			width: 13%;
+			margin-top: 21px;
+		}
+
+		.icon span, .icon span:before, .icon span:after {
+		    height: 7px;
+		    width: 35px;
+		}
+
+		.icon span:before {
+		  top: 2px;
+		}
+		.icon span:after {
+		  bottom: 2px;
+		}
+	/*MENU COMPLETO RESPONSIVO*/
+		section nav.navbar-fixed-top {
+			width: 100%;
+			height: 100%;
+		}
+		section nav div.navService {
+		    width: 100%;
+		    height: 100%;
+		    background: #0D395B;
+		}
+		section nav div ul {
+		    height: 80%;
+		}
+		section nav div ul li {
+		    width: 100%;
+		    text-align: center;
+		    padding: 20px;
+		}
+		section nav div ul li a {
+		    font-size: 18pt;
+		}
+
+	/*ESTILOS PARA EL FOOTER*/
+		.h1Footer {
+		    font-size: 18pt;
+		}
+		.h3Contactanos {
+		    font-size: 15pt;
+		}
+		.h4Contactanos {
+		    font-size: 12pt;
+		}
+		h4.correo {
+		    width: 300px;
+		}
+
+		input.formContacto {
+		    height: 50px;
+		}
+		button.btnenviar {
+			height: 70px;
+			font-size: 20pt;
+		}
+
+		h4.h4copyRights {
+		    font-size: 10pt;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		.contenedorSliderMain {
+		    top: 70px;
+		}
+
+
+
+		.sloganavance {
+		    margin-top: 200px;
+		}
+		h2.h1titulo {
+		    font-size: 20pt;
+		}
+
+		h1.h1corporativo {
+		    font-size: 20pt;
+		}
+		h1.h1corporativo2 {
+		    font-size: 25pt;
+		}
+		button.btnconocenos, button.btnmision {
+		    width: 200px;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		h1.h1MisionVision {
+		    margin: 90px;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		
+		img.attachment-list_articles_thumbs.size-list_articles_thumbs.wp-post-image {
+		    height: auto;
+		}
+		.grid div.textoBlog {
+		    height: auto;
+		    padding: 0;
+		}
+
+
+		section.misionVision {
+		    width: 90%;
+		    margin: auto;
+		}
+
+		section section#lista_articulos {
+		    margin-top: 100px;
+		}
+
+		.grid div h3 {
+		    font-size: 15pt;
+		    width: 100%;
+		    margin: auto;
+		    text-align: center;
+		}
+
+		.grid div h3 {
+    		margin-top: 20px;
+		}
+				.contenedorInfoBlog {
+		    margin: 20px;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		section.servicios {
+		    width: 90%;
+		    margin: auto;
+		}
+		.div-img .text p {
+		    font-size: 12pt;
+		    margin: 30px;
+		}
+	/*ESTILOS PARA CONTADURIA*/
+		
+	/*ESTILOS PARA LEGAL*/
+		
+	}
+
+	@media (min-width: 360px){
+	/*ESTILOS PARA EL HEADER MENU*/
+		
+	/*ESTILOS PARA EL FOOTER*/
+		.contenedorPrincipalContactanos {
+		    margin: 10px;
+		}
+		h4.correo {
+		    width: 339px;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		.sloganavance {
+		    margin-top: 290px;
+		}
+		button.btnconocenos, button.btnmision {
+		    width: 70%;
+		    height: 75px;
+		    font-size: 20pt;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		h1.h1MisionVision {
+		    margin: 50px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    text-align: center;
+		}
+
+		
+	/*ESTILOS PARA EL BLOG*/
+		
+		
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+
+	/*ESTILOS PARA CONTADURIA*/
+	
+	/*ESTILOS PARA LEGAL*/
+
+	}
+
+	@media (min-width: 375px){
+	/*ESTILOS PARA EL HEADER MENU*/
+		.iconoMenu {
+			width: 12%;
+		}
+	/*ESTILOS PARA EL FOOTER*/
+		
+	/*ESTILOS PARA EL INICIO*/
+		
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		
+	/*ESTILOS PARA EL BLOG*/
+		
+		
+		
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		.grid div.textoBlog {
+		    height: auto;
+		}
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+		
+	/*ESTILOS PARA LEGAL*/
+				
+	}
+
+	@media (min-width: 384px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*ESTILOS PARA EL FOOTER*/
+		h4.correo {
+		    width: 354px;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		h1.h1MisionVision {
+		    margin: 50px;
+		    margin-left: auto;
+		    margin-right: auto;
+		    text-align: center;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		
+		
+		.div-img .text {
+		    width: 97%;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+		
+	/*ESTILOS PARA LEGAL*/
+				
+	}
+
+	@media (min-width: 411px){
+	/*ESTILOS PARA EL HEADER MENU*/
+		.iconoMenu {
+		    width: 11%;
+		}
+	/*ESTILOS PARA EL FOOTER*/
+		h4.correo {
+		    width: 381px;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		
+	/*ESTILOS PARA EL BLOG*/
+		
+		
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+		
+	/*ESTILOS PARA LEGAL*/
+				
+	}
+
+	@media (min-width: 414px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*ESTILOS PARA EL FOOTER*/
+	
+	/*ESTILOS PARA EL INICIO*/
+		
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+	
+	/*ESTILOS PARA EL BLOG*/
+		
+		.grid div.textoBlog {
+		    height: 250px;
+		}
+		.grid div div p {
+		    font-size: 15pt;
+		}
+		section div aside section ul {
+		    font-size: 15pt;
+		    text-align: center;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		section section article hgroup h2 a {
+		    font-size: 25pt;
+		}
+		section section article div.extract {
+		    font-size: 15pt;
+		}
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		p.pMisionVision {
+		    font-size: 15pt;
+		}
+
+		section section#lista_articulos {
+		    margin-top: 100px;
+		}
+	/*ESTILOS PARA CONTADURIA*/
+		
+	/*ESTILOS PARA LEGAL*/
+	}
+
+	@media (min-width: 480px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*ESTILOS PARA EL FOOTER*/
+		h4.correo {
+		    width: 450px;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		.sloganavance {
+		    padding: 43px;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		h1.h1MisionVision {
+		    margin: 172px;
+		}
+
+	/*ESTILOS PARA EL BLOG*/
+		
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+
+	/*ESTILOS PARA CONTADURIA*/
+	
+	/*ESTILOS PARA LEGAL*/
+
+	}
+
+	@media (min-width: 540px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*ESTILOS PARA EL FOOTER*/
+		
+	/*ESTILOS PARA EL INICIO*/
+		.sloganavance {
+		    padding: 73px;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+
+		h1.h1MisionVision {
+		    margin: 100px 200px 50px 200px;
+		}
+	/*ESTILOS PARA EL BLOG*/
+	
+		img.attachment-list_articles_thumbs.size-list_articles_thumbs.wp-post-image {
+		    height: 280px;
+		}
+		.grid div.textoBlog {
+		    height: 281px;
+		}
+		section aside h3 {
+		    font-size: 25px;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+	
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+			
+	}
+
+	@media (min-width: 600px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+		section nav div.navService {
+		    margin-top: 25px;
+		}
+		.icon {
+		    height: 70px;
+		}
+		.iconoMenu {
+			width: 9%;
+			margin-top: 21px;
+		}
+
+		.icon span, .icon span:before, .icon span:after {
+		    height: 7px;
+		    width: 35px;
+		}
+
+		.icon span:before {
+		  top: 2px;
+		}
+		.icon span:after {
+		  bottom: 2px;
+		}
+		
+	/*ESTILOS PARA EL FOOTER*/
+		.contenedorPrincipalContactanos {
+		    margin: 5px;
+		}
+		h4.correo {
+		    width: 100%;
+		}
+		.contenedorUbicacion {
+		    width: 48%;
+		    display: inline-block;
+		    text-align: center;
+		}
+		h4.h4Contactanos {
+		    text-align: center;
+		    margin: 6px;
+		}
+
+		.contenedorCorreo {
+		    width: 48%;
+		    display: inline-block;
+		    text-align: center;
+		}
+		h4.h4Contactanos {
+		    text-align: center;
+		    margin: 6px;
+		}
+
+		.contenedorTelefono {
+		    width: 50%;
+		    text-align: center;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		.sloganavance {
+		    padding: 104px;
+		}
+		button.btnconocenos, button.btnmision {
+		    height: 90px;
+		}
+		h1.h1corporativo {
+		    font-size: 25pt;
+		}
+		h1.h1corporativo2 {
+		    font-size: 30pt;
+		}
+
+		img#imageresource {
+		    width: 50%;
+		}
+
+		section section div div div div p {
+			font-size: 18pt;
+		}
+
+
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+
+		h1.h1MisionVision {
+		    margin: 100px 200px 100px 226px;
+		}
+		#container {
+		    margin-bottom: 10px;
+		}
+
+		h1.h1MisionVision {
+		    margin: 40px;
+		    text-align: center;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		section section#lista_articulos {
+		    margin-top: 90px;
+		}
+		
+		img.attachment-list_articles_thumbs.size-list_articles_thumbs.wp-post-image {
+		    height: 300px;
+		}
+
+		.grid div h3 {
+		    font-size: 25pt;
+		    text-align: center;
+		    font-weight: 600;
+		}
+
+		.grid div.textoBlog {
+		    height: 301px;
+		}
+
+		.grid div div p {
+		    font-size: 18pt;
+		    font-weight: 500;
+		}
+		.grid div div a {
+			border-radius: 15px;
+			margin-top: 20px;
+			font-size: 20pt;
+		}
+
+		section aside section.widget {
+		    width: 48%;
+		    display: inline-block;
+		}
+		
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+	}
+
+	/*Tablets*/
+	@media (min-width: 768px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+		
+	/*ESTILOS PARA EL FOOTER*/
+		.espacio {
+		    padding: 26px;
+		    padding-left: 16%;
+		    padding-right: 0px;
+		}
+		button.btnenviar {
+			width: 83%;
+		}
+		.h1Footer {
+		    font-size: 18pt;
+		}
+		.h3Contactanos {
+		    font-size: 15pt;
+		}
+		.h4Contactanos {
+		    font-size: 14pt;
+		}
+		h4.h4copyRights {
+		    font-size: 10pt;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		.sloganavance {
+		    width: 100%;
+		    margin-left: auto;
+		    margin-right: auto;
+		    padding: 100px;
+		}
+		h2.h1titulo {
+		    font-size: 25pt;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		p.pMisionVision {
+		    margin: 50px;
+		}
+		.contenedorCorreo {
+		    width: 40%;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		img.attachment-list_articles_thumbs.size-list_articles_thumbs.wp-post-image {
+		    height: auto;
+		}
+		.grid div.textoBlog {
+		    height: auto;
+		}
+		.grid div div a {
+		    margin-bottom: 60px;
+		}
+
+		button.btnconocenos, button.btnmision {
+		    width: 50%;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		section.servicios {
+		    width: 90%;
+		    margin: auto;
+		}
+		.contenedorGeneral {
+		    width: 49%;
+		    display: inline-block;
+		    margin: 2px;
+		}
+	/*ESTILOS PARA CONTADURIA*/
+	
+	/*ESTILOS PARA BLOG*/
+		ul.grid {
+		    width: 49%;
+		    display: inline-block;
+		}
+
+		section aside h3 {
+		    font-size: 15pt;
+		}
+		section div aside section ul {
+			font-size: 12pt;
+			border-bottom-style: none; 
+		}
+
+		.grid div h3 {
+		    font-size: 18pt;
+		    margin-right: auto;
+    		margin-left: auto;
+		}
+		.contenedorInfoBlog {
+		    margin: 30px;
+		}
+		.grid div div p {
+		    font-size: 12pt;
+		}
+
+		.grid div div a {
+		    width: 140px;
+		    height: 30px;
+		    font-size: 15pt;
+		}
+
+
+
+	/*ESTILOS PARA LEGAL*/
+	}
+
+	@media (min-width: 800px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+		section nav div ul li a {
+		    font-size: 20pt;
+		}
+	/*ESTILOS PARA EL FOOTER*/
+
+		.contenedorUbicacion {
+		    width: 35%;
+		}
+		.contenedorCorreo {
+		    width: 31%;
+		    top: 0px;
+		    position: relative;
+		}
+		.contenedorTelefono {
+		    width: 30%;
+		    display: inline-block;
+		    position: relative;
+		    top: -31px;
+		}
+
+		.form-control {
+		    font-size: 20px;
+		}
+
+	/*ESTILOS PARA EL INICIO*/
+	.mision {
+	    padding-top: 50px;
+	}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		p.pMisionVision {
+		    margin: 40px;
+		}
+		p.pMisionVision {
+		    font-size: 20pt;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		.div-img .text p {
+		    font-size: 18pt;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+	}
+
+	@media (min-width: 960px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+		.iconoMenu {
+		    width: 7%;
+		}
+	/*ESTILOS PARA EL FOOTER*/
+		.contenedorCorreo {
+			top: 0;
+		}
+		.contenedorTelefono {
+		    top: -32px;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		.imgAvanceIndex{
+			display: inline-block;
+			width: 50%;
+		}
+		.textoAvanceIndex {
+			width: 50%;
+			margin-top: 20px;
+		}
+
+		.contenedorMision, .contenedorVision {
+			    margin-left: 0;
+			    margin-bottom: 10px;
+			    border-bottom-style: none;
+			    border-bottom-width: none;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		section.misionVision {
+		    margin-bottom: 10px;
+		    border-bottom-style: solid;
+		    border-bottom-width: 1.5px;
+		}
+	/*ESTILOS PARA EL BLOG*/
+
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+	
+	}
+
+	@media (min-width: 1024px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+		.iconoMenu {
+		    width: 7%;
+		}
+	/*ESTILOS PARA EL FOOTER*/
+		.contenedorUbicacion {
+		    width: 100%;
+		}
+		.contenedorCorreo {
+		    width: 100%;
+		    position: relative;
+		    top: 0;
+		}
+		.contenedorTelefono {
+		    width: 100%;
+		    top: 0;
+		}
+
+		.h1Footer {
+		    font-size: 20pt;
+		}
+		.h3Contactanos {
+		    font-size: 18pt;
+		}
+		.h4Contactanos {
+		    font-size: 16pt;
+		}
+
+		h4.h4copyRights {
+		    font-size: 13pt;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		.contenedorImgServicios {
+		    width: 99%;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		p.pMisionVision {
+		    font-size: 15pt;
+		}
+	/*ESTILOS PARA EL BLOG*/
+
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+	}
+
+	/*Desktop*/
+	@media (min-width: 1280px){
+	/*ESTILOS PARA EL HEADER MENU*/
+	.icon {
+		display: none;
+	}
+	.logoDisiplinaBlog {
+		display: block;
+	}
+	.redfacebook, .redtwitter {
+	    display: inline-block;
+	}
+	section nav.mostrar {
+	    left: 0% !important;
+	}
+	.logo {
+	    display: inline-block;
+	}
+	section nav.navbar-fixed-top {
+	    height: 66px;
+	    margin-top: 0;
+	}
+
+	/*Estilos de Nav Servicios*/
+	section nav div.navService {
+	    width: 62%;
+	    display: inline-block;
+	    margin: auto;
+	    margin-top: 20px;
+	    height: auto;
+	    background: none;
+	}
+	section nav div ul {
+	    /* padding-left: 130px; */
+	    /* margin-top: 10px; */
+	    width: 100%;
+	    height: auto;
+	    font-size: 18px;
+	    margin: auto;
+	    overflow: hidden;
+	    padding: 0;
+	    background: none;
+	}
+	section nav div ul li {
+	    display: inline-block;
+	    padding: 6px;
+	    width: initial;
+	}
+	section nav div ul li a {
+	    color: #FFF !important;
+	    text-decoration: none !important;
+	    font-weight: bold !important;
+	    /* text-shadow: 0px 1px 5px #FFF !important; */
+	    margin: 0;
+	    padding: 0 !important;
+	    display: inline-block;
+	    font-size: 15pt;
+	}
+
+	section nav div ul li a:hover {
+	    color: #055994;
+	}
+	
+	.redfacebook {
+	    background: url(../img/iconos/fb.png);
+	    /* position: relative; */
+	    width: 30px;
+	    height: 30px;
+	    background-size: 30px;
+	    background-repeat: no-repeat;
+	    /* left: 76em; */
+	    /* top: 19px; */
+	    float: right;
+	    margin: 10px;
+	    margin-top: 22px;
+	}
+	.redfacebookAlterno {
+	    background: url(../img/iconos/fb-blanco.png);
+	    /* position: relative; */
+	    width: 30px;
+	    height: 30px;
+	    background-size: 30px;
+	    background-repeat: no-repeat;
+	    /* left: 76em; */
+	    /* top: 19px; */
+	    float: right;
+	    margin: 10px;
+	    margin-top: 22px;
+	}
+
+	.redtwitter {
+	    background: url(../img/iconos/twitter.png);
+	    /* position: relative; */
+	    width: 30px;
+	    height: 30px;
+	    background-size: 33px;
+	    background-repeat: no-repeat;
+	    float: right;
+	    /* left: 80em; */
+	    margin: 10px;
+	    /* top: -11px; */
+	    margin-top: 21px;
+	}
+
+	.redtwitterAlterno {
+	    background: url(../img/iconos/twitter-blanco.png);
+	    /* position: relative; */
+	    width: 30px;
+	    height: 30px;
+	    background-size: 33px;
+	    background-repeat: no-repeat;
+	    float: right;
+	    /* left: 80em; */
+	    margin: 10px;
+	    /* top: -11px; */
+	    margin-top: 21px;
+	}
+
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+
+	/*ESTILOS PARA EL SEGUNDO MENU INDEX*/
+	section nav.menuinfo {
+	    display: inline-block;
+	}
+	section nav ul.ulMenuinfo {
+	    width: 79%;
+	    padding: 1px; 
+	}
+	/*ESTILOS PARA EL FOOTER*/
+
+	/*ESTILOS PARA EL INICIO*/
+		.contenedorSliderMain {
+		    top: 0px;
+		    margin-bottom: 0px;
+		}
+
+
+		.textoAvanceIndex {
+		    margin-top: 65px;
+		}
+
+		h3.h3Contactanos {
+		    text-align: left;
+		    margin-left: 80px;
+		}
+		h4.h4Contactanos {
+		    margin-left: 80px;
+		    text-align: left;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		.logoDisiplinaAdministrativos, .logoDisiplinaCHumanos, .logoDisiplinaContaduria, .logoDisiplinaLegal  {
+		    height: 270px;
+		}
+		.logoDisiplinaBlog {
+			height: 500px;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		div#divBlog {
+		    padding-right: 15px;
+		    padding-left: 15px;
+		}
+
+		section section#lista_articulos {
+		    width: 75%;
+		}
+
+		section aside {
+		    width: 25%;
+		    margin-top: 90px;
+		    padding: 20px;
+		}
+		section aside h3 {
+		    font-size: 15pt;
+		}
+		section aside section.widget {
+		    width: 100%;
+		}
+
+		section div aside section ul {
+		    font-size: 12pt;
+		    text-align: justify;
+		}
+		section section div section aside section ul li span {
+			font-size: 10pt;
+		}
+
+
+
+		.grid div div a {
+		    margin-top: 130px;
+		}
+
+		.grid div div a {
+		    width: 30%;
+		    height: 50px;
+		    font-size: 25pt;
+		}
+
+
+
+		ul.grid {
+		    width: 49%;
+		    display: inline-block;
+		}
+		.grid div div p {
+		    font-size: 12pt;
+		    margin: 40px;
+		    text-align: justify;
+		}
+		.grid div div a {
+		    width: 34%;
+		    height: 33px;
+		    font-size: 18pt;
+		    margin-top: 60px;
+
+		}
+
+
+		.contenedorInfoBlog {
+		    margin: 20px;
+		}
+		.contenedorInfoBlog {
+		    margin: 20px;
+		}
+
+
+		.grid div h3 {
+		    font-size: 18pt;
+		}
+
+		.div-img .text p {
+		    font-size: 12pt;
+		}
+
+
+		.logoDisiplinaBlog {
+		    height: 300px;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		section section article div.extract {
+		    font-size: 12pt;
+		}
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+	}
+
+	@media (min-width: 1366px){
+	/*ESTILOS PARA EL HEADER MENU*/
+
+	/*Estilos de Nav Servicios*/
+	
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+
+	/*ESTILOS PARA EL SEGUNDO MENU INDEX*/
+	
+	/*ESTILOS PARA EL FOOTER*/
+
+	/*ESTILOS PARA EL INICIO*/
+		button.btnconocenos, button.btnmision {
+		    width: 30%;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+
+	/*ESTILOS PARA EL BLOG*/
+		
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+	}
+
+	@media (min-width: 1440px){
+	/*ESTILOS PARA EL HEADER MENU*/
+		section nav div.navService {
+		    width: 63%;
+		}
+		section nav div ul {
+		    width: 88%;
+		}
+	/*Estilos de Nav Servicios*/
+	
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+
+	/*ESTILOS PARA EL SEGUNDO MENU INDEX*/
+	
+	/*ESTILOS PARA EL FOOTER*/
+
+	/*ESTILOS PARA EL INICIO*/
+		.textoAvanceIndex {
+		    margin-top: 150px;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		p.pMisionVision {
+		    margin: 80px;
+		    margin-top: 0;
+		}
+
+
+		.div-img .text p {
+		    margin: 40px;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+	}
+
+	@media (min-width: 1500px){
+	/*ESTILOS PARA EL HEADER MENU*/
+		section nav div ul {
+		    width: 83%;
+		}
+	/*Estilos de Nav Servicios*/
+	
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+
+	/*ESTILOS PARA EL SEGUNDO MENU INDEX*/
+	
+	/*ESTILOS PARA EL FOOTER*/
+
+	/*ESTILOS PARA EL INICIO*/
+
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+
+	/*ESTILOS PARA EL BLOG*/
+		.logoDisiplinaBlog {
+		    height: 400px;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+	}
+
+	@media (min-width: 1920px){
+	/*ESTILOS PARA EL HEADER MENU*/
+		section nav div.navService {
+		    width: 75%;
+		}
+		section nav div ul {
+		    width: 64%;
+		}	
+	/*Estilos de Nav Servicios*/
+		section nav ul.ulMenuinfo {
+		    width: 70%;
+		}
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+
+	/*ESTILOS PARA EL SEGUNDO MENU INDEX*/
+	
+	/*ESTILOS PARA EL FOOTER*/
+		
+	/*ESTILOS PARA EL INICIO*/
+		section.misionVision {
+		    width: 70%;
+		    margin: auto;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		p.pMisionVision {
+		    margin: 50px;
+		    margin-top: 0;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		.logoDisiplinaBlog {
+		    height: 500px;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		section.servicios {
+		    width: 70%;
+		    margin: auto;
+		}
+		.contenedorGeneral {
+		    margin: 1px;
+		    width: 32.22222222%;
+		}
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+
+	/*ESTILOS GENERALES*/
+		
+	}
+
+	@media (min-width: 2560px){
+	/*ESTILOS PARA EL HEADER MENU*/
+		.logo {
+		    margin-left: 40px;
+		}
+		img.imglogo {
+		    width: 280px;
+		}
+		section nav div.navService {
+		    width: 80%;
+		    margin-top: 30px;
+		}
+		section nav div ul {
+		    width: 61%;
+		}
+		section nav div ul li a {
+		    font-size: 25pt;
+		}
+		section nav.navbar-fixed-top {
+		    height: 95px;
+		}
+
+		.redfacebook {
+		    width: 50px;
+		    height: 50px;
+		    background-size: 50px;
+		    background-repeat: no-repeat;
+		    margin-top: 21px;
+		}
+		.redfacebookAlterno {
+		    width: 50px;
+		    height: 50px;
+		    background-size: 50px;
+		    background-repeat: no-repeat;
+		    margin-top: 21px;
+		}
+		.redtwitter {
+		    width: 50px;
+		    height: 50px;
+		    background-size: 50px;
+		    margin-top: 21px;
+		}
+		.redtwitterAlterno {
+		    width: 50px;
+		    height: 50px;
+		    background-size: 50px;
+		    margin-top: 21px;
+		}
+
+		.sloganavance {
+		    margin-top: 580px;
+		}
+		h2.h1titulo {
+		    font-size: 40pt;
+		    margin-top: 90px;
+		}
+
+		section nav ul.ulMenuinfo {
+		    width: 72%;
+		}
+		section nav ul div li a.aMenuinfo {
+		    font-size: 25pt;
+		}
+	/*Estilos de Nav Servicios*/
+	
+	/*ESTILOS PARA ICONO MENU Y ANIMACIÓN*/
+
+	/*ESTILOS PARA EL SEGUNDO MENU INDEX*/
+	
+	/*ESTILOS PARA EL FOOTER*/
+		h1.h1Footer {
+		    font-size: 30pt;
+		}
+		h3.h3Contactanos {
+		    font-size: 25pt;
+		}
+		h4.h4Contactanos {
+		    font-size: 20pt;
+		}
+
+		h4.h4copyRights {
+		    font-size: 18pt;
+		}
+	/*ESTILOS PARA EL INICIO*/
+		.logoDisiplinaAdministrativos {
+		    height: 320px;
+		}
+	/*ESTILOS PARA ADMINISTRATIVOS*/
+		.contenedorMision {
+		    margin: 40px;
+		}
+		h1.h1MisionVision {
+		    font-size: 30pt;
+		}
+		p.pMisionVision {
+		    font-size: 25pt;
+		}
+		h1.h1TituloServicios {
+		    font-size: 30pt;
+		}
+	/*ESTILOS PARA EL BLOG*/
+		section section#lista_articulos {
+		    width: 70%;
+		}
+		.grid div h3 {
+		    font-size: 30pt;
+		}
+		
+		.grid div div a {
+		    width: 28%;
+		    height: 36px;
+		    font-size: 18pt;
+		}
+
+
+		section aside {
+		    width: 30%;
+		}
+		section aside h3 {
+		    font-size: 25pt;
+		}
+		section div aside section ul {
+		    font-size: 20pt;
+		}
+	/*ESTILOS PARA EL ARTICULO COMPLETO*/
+		section section article hgroup h2 a {
+		    font-size: 30pt;
+		}
+		.date {
+		    font-size: 15pt;
+		}
+
+		section section article div.extract {
+		    font-size: 18pt;
+		}
+
+		section div aside section ul {
+		    font-size: 18pt;
+		}
+
+
+
+	/*ESTILOS PARA CAPITAL HUMANO*/
+		
+	/*ESTILOS PARA CONTADURIA*/
+			
+	/*ESTILOS PARA LEGAL*/
+
+	/*ESTILOS GENERALES*/
+		.logoDisiplinaAdministrativos, .logoDisiplinaCHumano, .logoDisiplinaCHumano, .logoDisiplinaContables, .logoDisiplinaLegal {
+		    height: 500px;
+		}
+		
+	}
+
+	
+
+
